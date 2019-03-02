@@ -22,7 +22,7 @@ set -o nounset
 #
 
 if [ $# -eq 0 ]; then
-    osm_area=albania                         #  default test country
+    osm_area=montrouge
     echo "No parameter - set area=$osm_area "
 else
     osm_area=$1
