@@ -113,15 +113,6 @@ services:
       BBOX: ${BBOX}
       MIN_ZOOM: ${MIN_ZOOM}
       MAX_ZOOM: ${MAX_ZOOM}
-  postserve:
-    image: "openmaptiles/postserve:0.2"
-    env_file: .env
-    networks:
-     - postgres_conn
-    ports:
-    - "8090:8080"
-    volumes:
-     - ./build/openmaptiles.tm2source:/mapping
 
 networks:
   postgres_conn:
