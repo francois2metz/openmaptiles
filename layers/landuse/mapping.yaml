@@ -57,6 +57,7 @@ tables:
       landuse:
       - railway
       - cemetery
+      - construction
       - military
       # zoning
       - residential
