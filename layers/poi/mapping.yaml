@@ -318,6 +318,9 @@ def_poi_mapping_tourism: &poi_mapping_tourism
 def_poi_mapping_waterway: &poi_mapping_waterway
   - dock
 
+def_poi_mapping_office: &poi_mapping_office
+  - government
+
 tables:
   # etldoc: imposm3 -> osm_poi_point
   poi_point:
@@ -378,6 +381,7 @@ tables:
       historic: *poi_mapping_historic
       landuse: *poi_mapping_landuse
       leisure: *poi_mapping_leisure
+      office: *poi_mapping_office
       railway: *poi_mapping_railway
       shop: *poi_mapping_shop
       sport: *poi_mapping_sport
@@ -444,6 +448,7 @@ tables:
       historic: *poi_mapping_historic
       landuse: *poi_mapping_landuse
       leisure: *poi_mapping_leisure
+      office: *poi_mapping_office
       railway: *poi_mapping_railway
       shop: *poi_mapping_shop
       sport: *poi_mapping_sport
