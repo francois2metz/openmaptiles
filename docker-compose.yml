@@ -38,11 +38,17 @@ services:
      - ./data:/import
      - ./build:/mapping
      - cache:/cache
+  generate-osmborder:
+    image: openmaptiles/generate-osmborder
+    volumes:
+      - ./osmborder:/import
   import-osmborder:
     image: "openmaptiles/import-osmborder:0.4"
     env_file: .env
     networks:
     - postgres_conn
+    volumes:
+      - ./osmborder:/import
   import-osm-diff:
     image: "openmaptiles/import-osm:0.5"
     env_file: .env

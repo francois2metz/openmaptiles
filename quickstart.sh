@@ -204,6 +204,11 @@ echo "====> : Start importing border data from http://openstreetmap.org into Pos
 echo "      : Source code:  https://github.com/openmaptiles/import-osmborder"
 echo "      : Data license: http://www.openstreetmap.org/copyright"
 echo "      : Thank you: https://github.com/pnorman/osmborder "
+
+mkdir osmborder
+cp ./data/${testdata} osmborder/
+
+docker-compose run --rm generate-osmborder
 docker-compose run --rm import-osmborder
 
 echo " "
