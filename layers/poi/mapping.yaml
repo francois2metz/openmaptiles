@@ -12,6 +12,7 @@ def_poi_mapping_amenity: &poi_mapping_amenity
   - public_bookcase
   - bicycle_parking
   - motorcycle_parking
+  - charging_station
   - arts_centre
   - bank
   - bar
