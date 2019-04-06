@@ -2,7 +2,7 @@
 
 AREA=montrouge
 DOCKER_COMPOSE_FILE=data/docker-compose-config.yml
-BBOX=2.300305,48.809181,2.333694,48.822321
+BBOX=2.293611,48.807344,2.336998,48.825486
 
 echo "http://www.overpass-api.de/api/xapi_meta?*\[bbox=${BBOX}\]"
 
