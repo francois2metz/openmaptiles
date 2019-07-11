@@ -147,6 +147,7 @@ def_poi_mapping_shop: &poi_mapping_shop
   - car_repair
   - carpet
   - charity
+  - cheese
   - chemist
   - chocolate
   - clothes
