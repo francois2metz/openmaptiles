@@ -11,7 +11,6 @@ def_poi_mapping_amenity: &poi_mapping_amenity
   - bench
   - vending_machine
   - public_bookcase
-  - bicycle_parking
   - motorcycle_parking
   - charging_station
   - arts_centre
