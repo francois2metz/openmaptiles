@@ -375,6 +375,9 @@ tables:
     - name: sport
       key: sport
       type: string
+    - name: vending
+      key: vending
+      type: string
     mapping:
       aerialway: *poi_mapping_aerialway
       amenity: *poi_mapping_amenity
@@ -441,6 +444,9 @@ tables:
       type: integer
     - name: sport
       key: sport
+      type: string
+    - name: vending
+      key: vending
       type: string
     mapping:
       aerialway: *poi_mapping_aerialway

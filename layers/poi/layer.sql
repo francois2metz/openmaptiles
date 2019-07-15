@@ -16,6 +16,8 @@ RETURNS TABLE(osm_id bigint, geometry geometry, name text, name_en text, name_de
                     THEN NULLIF(religion, '')
             WHEN subclass = 'pitch'
                     THEN NULLIF(sport, '')
+            WHEN subclass = 'vending_machine'
+                    THEN NULLIF(vending, '')
             ELSE subclass
         END AS subclass,
         agg_stop,
