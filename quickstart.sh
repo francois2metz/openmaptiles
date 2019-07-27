@@ -135,6 +135,7 @@ echo " "
 echo "-------------------------------------------------------------------------------------"
 echo "====> : Removing old MBTILES if exists ( ./data/*.mbtiles ) "
 rm -f ./data/*.mbtiles
+rm -rf osmborder
 
 if [ !  -f ./data/${testdata} ]; then
     echo " "
