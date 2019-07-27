@@ -13,6 +13,7 @@ tileset:
     - layers/water_name/water_name.yaml
     - layers/transportation_name/transportation_name.yaml
     - layers/tree/tree.yaml
+    - layers/barrier/barrier.yaml
     - layers/place/place.yaml
     - layers/housenumber/housenumber.yaml
     - layers/poi/poi.yaml

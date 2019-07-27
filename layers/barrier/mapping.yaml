@@ -1,0 +1,17 @@
+# barrier , see http://taginfo.openstreetmap.org/keys/amenity#values
+def_barrier: &barrier
+  - fence
+  - wall
+
+tables:
+
+  # etldoc: imposm3 -> osm_barrier
+  barrier:
+    type: linestring
+    fields:
+    - name: barrier
+      type: mapping_value
+    - name: geometry
+      type: geometry
+    mapping:
+      barrier: *barrier

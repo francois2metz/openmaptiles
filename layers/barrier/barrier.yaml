@@ -1,0 +1,17 @@
+layer:
+  id: "barrier"
+  description: |
+      [Barriers](https://wiki.openstreetmap.org/wiki/Key:barrier)
+  buffer_size: 4
+  fields:
+    barrier:
+      description: |
+        The type of barrier
+  datasource:
+    geometry_field: geometry
+    query: (SELECT geometry, barrier FROM layer_barrier(!bbox!, z(!scale_denominator!), !pixel_width!)) AS t
+schema:
+  - ./layer.sql
+datasources:
+  - type: imposm3
+    mapping_file: ./mapping.yaml
