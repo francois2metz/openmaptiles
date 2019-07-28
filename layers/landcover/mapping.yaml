@@ -109,4 +109,7 @@ tables:
       - tidalflat
       - saltmarsh
       - mangrove
+      amenity:
+      - parking_space
+      - parking
     type: polygon
