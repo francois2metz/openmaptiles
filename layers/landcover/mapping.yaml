@@ -67,6 +67,10 @@ tables:
       type: area
     - name: webmerc_area
       type: webmerc_area
+    - name: subclass
+      type: mapping_value
+    - name: mapping_key
+      type: mapping_key
     mapping:
       landuse:
       - allotments
