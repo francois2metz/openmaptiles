@@ -63,6 +63,7 @@ RETURNS TEXT AS $$
         WHEN subclass IN ('bag','clothes') THEN 'clothing_store'
         WHEN subclass IN ('swimming_area','swimming') THEN 'swimming'
         WHEN subclass IN ('castle','ruins') THEN 'castle'
+        WHEN subclass IN ('parking','parking_space') THEN 'parking'
         ELSE subclass
     END;
 $$ LANGUAGE SQL IMMUTABLE;

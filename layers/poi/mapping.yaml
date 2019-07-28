@@ -8,6 +8,8 @@ def_poi_mapping_aerialway: &poi_mapping_aerialway
 
 # amenity values , see http://taginfo.openstreetmap.org/keys/amenity#values
 def_poi_mapping_amenity: &poi_mapping_amenity
+  - parking_space
+  - parking
   - bench
   - vending_machine
   - public_bookcase
@@ -380,6 +382,9 @@ tables:
     - name: vending
       key: vending
       type: string
+    - name: parking_space
+      key: parking_space
+      type: string
     mapping:
       aerialway: *poi_mapping_aerialway
       amenity: *poi_mapping_amenity
@@ -449,6 +454,9 @@ tables:
       type: string
     - name: vending
       key: vending
+      type: string
+    - name: parking_space
+      key: parking_space
       type: string
     mapping:
       aerialway: *poi_mapping_aerialway
