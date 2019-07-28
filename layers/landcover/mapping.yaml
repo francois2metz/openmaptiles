@@ -112,6 +112,4 @@ tables:
       amenity:
       - parking_space
       - parking
-      cemetery:
-      - sector
     type: polygon
