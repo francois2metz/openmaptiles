@@ -64,6 +64,7 @@ RETURNS TEXT AS $$
         WHEN subclass IN ('swimming_area','swimming') THEN 'swimming'
         WHEN subclass IN ('castle','ruins') THEN 'castle'
         WHEN subclass IN ('parking','parking_space') THEN 'parking'
+        WHEN mapping_key = 'fitness_station' THEN mapping_key
         ELSE subclass
     END;
 $$ LANGUAGE SQL IMMUTABLE;
