@@ -99,6 +99,7 @@ tables:
       leisure:
       - park
       - garden
+      - fitness_station
       wetland:
       - bog
       - swamp

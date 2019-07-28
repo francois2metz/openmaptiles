@@ -15,7 +15,7 @@ CREATE OR REPLACE FUNCTION landcover_class(subclass VARCHAR) RETURNS TEXT AS $$
         WHEN subclass IN ('glacier', 'ice_shelf') THEN 'ice'
         WHEN subclass IN ('wood', 'forest') THEN 'wood'
         WHEN subclass IN ('bare_rock', 'scree') THEN 'rock'
-        WHEN subclass IN ('grassland', 'grass', 'meadow', 'allotments', 'grassland',
+        WHEN subclass IN ('grassland', 'grass', 'meadow', 'allotments', 'grassland', 'fitness_station',
                           'park', 'village_green', 'recreation_ground', 'park', 'garden') THEN 'grass'
         WHEN subclass IN ('wetland', 'bog', 'swamp', 'wet_meadow', 'marsh', 'reedbed',
                           'saltern', 'tidalflat', 'saltmarsh', 'mangrove') THEN 'wetland'
