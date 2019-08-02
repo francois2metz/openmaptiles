@@ -339,6 +339,9 @@ def_poi_mapping_fitness_station: &poi_mapping_fitness_station
   - sit-up
   - wall_bars
 
+def_poi_mapping_cemetery: &poi_mapping_cemetery
+  - sector
+
 tables:
   # etldoc: imposm3 -> osm_poi_point
   poi_point:
@@ -412,6 +415,7 @@ tables:
       sport: *poi_mapping_sport
       tourism: *poi_mapping_tourism
       waterway: *poi_mapping_waterway
+      cemetery: *poi_mapping_cemetery
 
 
   # etldoc: imposm3 -> osm_poi_polygon
@@ -486,3 +490,4 @@ tables:
       sport: *poi_mapping_sport
       tourism: *poi_mapping_tourism
       waterway: *poi_mapping_waterway
+      cemetery: *poi_mapping_cemetery
