@@ -197,7 +197,7 @@ echo "====> : Start importing water data from http://osmdata.openstreetmap.de/ i
 echo "      : Source code:  https://github.com/openmaptiles/import-water "
 echo "      : Data license: https://osmdata.openstreetmap.de/info/license.html "
 echo "      : Thank you: https://osmdata.openstreetmap.de/info/ "
-docker-compose run --rm import-water
+#docker-compose run --rm import-water
 
 echo " "
 echo "-------------------------------------------------------------------------------------"
@@ -218,7 +218,7 @@ echo "====> : Start importing  http://www.naturalearthdata.com  into PostgreSQL 
 echo "      : Source code: https://github.com/openmaptiles/import-natural-earth "
 echo "      : Terms-of-use: http://www.naturalearthdata.com/about/terms-of-use  "
 echo "      : Thank you: Natural Earth Contributors! "
-docker-compose run --rm import-natural-earth
+#docker-compose run --rm import-natural-earth
 
 echo " "
 echo "-------------------------------------------------------------------------------------"
@@ -226,7 +226,7 @@ echo "====> : Start importing OpenStreetMap Lakelines data "
 echo "      : Source code: https://github.com/openmaptiles/import-lakelines "
 echo "      :              https://github.com/lukasmartinelli/osm-lakelines "
 echo "      : Data license: .. "
-docker-compose run --rm import-lakelines
+#docker-compose run --rm import-lakelines
 
 echo " "
 echo "-------------------------------------------------------------------------------------"
