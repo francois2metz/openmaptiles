@@ -32,6 +32,6 @@ services:
       BBOX: "$lon_min,$lat_min,$lon_max,$lat_max"
       OSM_MAX_TIMESTAMP : "$timestamp_max"
       OSM_AREA_NAME: "$AREA"
-      MIN_ZOOM: "0"
-      MAX_ZOOM: "14"
+      MIN_ZOOM: "14"
+      MAX_ZOOM: "17"
 EOM
