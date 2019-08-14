@@ -1,5 +1,6 @@
 tileset:
   layers:
+    - layers/water/water.yaml
     - layers/landcover/landcover.yaml
     - layers/landuse/landuse.yaml
     - layers/mountain_peak/mountain_peak.yaml
