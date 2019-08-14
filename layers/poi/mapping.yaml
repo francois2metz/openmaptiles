@@ -344,6 +344,10 @@ def_poi_mapping_fitness_station: &poi_mapping_fitness_station
 def_poi_mapping_cemetery: &poi_mapping_cemetery
   - sector
 
+# craft values , see http://taginfo.openstreetmap.org/keys/craft#values
+def_poi_craft: &poi_mapping_craft
+  - __any__
+
 tables:
   # etldoc: imposm3 -> osm_poi_point
   poi_point:
@@ -406,6 +410,7 @@ tables:
       amenity: *poi_mapping_amenity
       barrier: *poi_mapping_barrier
       building: *poi_mapping_building
+      craft: *poi_mapping_craft
       fitness_station: *poi_mapping_fitness_station
       highway: *poi_mapping_highway
       historic: *poi_mapping_historic
@@ -481,6 +486,7 @@ tables:
       amenity: *poi_mapping_amenity
       barrier: *poi_mapping_barrier
       building: *poi_mapping_building
+      craft: *poi_mapping_craft
       fitness_station: *poi_mapping_fitness_station
       highway: *poi_mapping_highway
       historic: *poi_mapping_historic
