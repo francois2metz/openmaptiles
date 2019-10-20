@@ -46,6 +46,7 @@ build/openmaptiles.tm2source/data.yml: build
 
 build/mapping.yaml: build
 	docker-compose run --rm openmaptiles-tools generate-imposm3 openmaptiles.yaml > build/mapping.yaml
+	echo 'use_single_id_space: true' >> build/mapping.yaml
 
 build/tileset.sql: build
 	docker-compose run --rm openmaptiles-tools generate-sql openmaptiles.yaml > build/tileset.sql
