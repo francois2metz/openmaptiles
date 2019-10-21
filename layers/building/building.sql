@@ -86,7 +86,7 @@ CREATE OR REPLACE VIEW osm_all_buildings AS (
          FROM
          osm_building_polygon obp
            LEFT JOIN osm_building_relation obr ON (obr.member = obp.osm_id)
-         WHERE obp.osm_id >= 0
+         WHERE obp.osm_id >= -1e17
 );
 
 CREATE OR REPLACE FUNCTION layer_building(bbox geometry, zoom_level int)
