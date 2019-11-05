@@ -343,7 +343,7 @@ indoor INT, surface TEXT) AS $$
         WHERE zoom_level >= 13
             AND (
                   man_made IN ('bridge', 'pier')
-                  OR COALESCE(layer, 0) >= 0
+                  OR (ST_GeometryType(geometry) IN ('ST_Polygon','ST_MultiPolygon') AND COALESCE(layer, 0) >= 0)
             )
     ) AS zoom_levels
     WHERE geometry && bbox
