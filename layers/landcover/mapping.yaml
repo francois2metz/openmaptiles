@@ -113,4 +113,6 @@ tables:
       amenity:
       - parking_space
       - parking
+      - bicycle_parking
+      - motorcycle_parking
     type: polygon
