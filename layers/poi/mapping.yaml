@@ -136,6 +136,7 @@ def_poi_mapping_railway: &poi_mapping_railway
 
 # shop values , see http://taginfo.openstreetmap.org/keys/shop#values
 def_poi_mapping_shop: &poi_mapping_shop
+  - funeral_directors
   - e-cigarette
   - accessories
   - alcohol
